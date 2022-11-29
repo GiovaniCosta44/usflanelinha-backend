@@ -37,3 +37,22 @@ create table Ticket
     FOREIGN KEY(aluno_ra) REFERENCES Aluno(Ra),
     FOREIGN KEY(vaga_id) REFERENCES Vaga(id)
 );
+
+INSERT INTO Vaga(Numero, Rua, Tipo, Status) 
+VALUES
+(23, 2, "MOTORBIKE", 1), 
+(24, 2, "CAR", 1), 
+(25, 2, "CAR", 1), 
+(88, 5, "MOTORBIKE", 1),
+(90, 6, "CAR", 1), 
+(12, 1, "CAR", 1),
+(13, 1, "MOTORBIKE", 1),
+(14, 1, "CAR", 1),
+(32, 4, "CAR", 1),
+(30, 4, "CAR", 1),
+(12, 3, "MOTORBIKE", 1),
+(13, 3, "CAR", 1);
+
+INSERT INTO `Aluno` (`Ra`, `Nome`, `Email`, `Telefone`)
+VALUES
+('123456', 'Daniel', 'daniel.petroni25@gmail.com', '11961862329');
